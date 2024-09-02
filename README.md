@@ -15,12 +15,14 @@ npm install --save oc-modal-malek
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'oc-modal-malek'
+import OCModalMalek from 'oc-modal-malek'
 import 'oc-modal-malek/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    // isOpen should be a boolean state to handle display
+    // onClose sets boolean state to false 
+    return <OCModalMalek isOpen={true} onClose={() => console.log("closed")} text="Thanks for your subscription !" />
   }
 }
 ```
